@@ -46,5 +46,6 @@ else:
         buffer[-1] = (buffer[-1] + 1) % BUFFER_SIZE
         print(buffer[:])
         ReleaseMutex(mutex)
-        ReleaseSemaphore(space_s, 1)
+        ReleaseSemaphore(space_s, 1) 
+        sleep(randint(0, 3))
 
